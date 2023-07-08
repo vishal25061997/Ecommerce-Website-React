@@ -1,40 +1,44 @@
-import React from "react";
-import styled from "styled-components";
 import { NavLink } from "react-router-dom";
+import styled from "styled-components";
 import { Button } from "../styles/Button";
 
+const HeroSection = ({ myData }) => {
+  const { name } = myData;
 
-const HeroSection=()=>{
-    return <Wrapper>
-        <div className="container">
-  <div className="grid grid-two-column"></div>
-  <div className = "hero-section-data">
-    <p className="intro-data">Welcome</p>
-    <h1>ShopClues Store</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias 
-        atque temporius veniam doloribus libero ad error voluptates
-        animi  susscript sapiente.
-    </p>
-    <NavLink>
-        <Button>Shop Now</Button>
-    </NavLink>
-  </div>
-  <div className="hero-section-image">
-    <figure>
-        <img 
-        src="images/hero.jpg"
-         alt="error"
-         className="img-style"
-         
-         />
-    </figure>
-  </div>
+  return (
+    <Wrapper>
+      <div className="container">
+        <div className="grid grid-two-column">
+          <div className="hero-section-data">
+            <p className="intro-data">Welcome to </p>
+            <h1> {name} </h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+              atque temporibus veniam doloribus libero ad error omnis voluptates
+              animi! Suscipit sapiente.
+            </p>
+            <NavLink>
+              <Button>show now</Button>
+            </NavLink>
+          </div>
+          {/* our homepage image  */}
+          <div className="hero-section-image">
+            <figure>
+              <img
+                src="images/hero.jpg"
+                alt="hero-section-pic"
+                className="img-style"
+              />
+            </figure>
+          </div>
         </div>
+      </div>
     </Wrapper>
-}
+  );
+};
 
 const Wrapper = styled.section`
-padding: 12rem 0;
+  padding: 12rem 0;
 
   img {
     min-width: 10rem;
@@ -98,4 +102,5 @@ padding: 12rem 0;
     }
   }
 `;
+
 export default HeroSection;
