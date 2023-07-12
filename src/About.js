@@ -1,12 +1,17 @@
 import React from "react";
 import HeroSection from "./components/HeroSection";
+import { useProductContext } from "./context/ProductContext";
 
 const About = () => {
+  const { myName } = useProductContext();
+
   const data = {
-    name: "About Shopeclues Ecommerce",
+    name: "Shopeclues Ecommerce",
   };
+
   return (
     <>
+      {myName}
       <HeroSection myData={data} />
       <p>
         {" "}
@@ -23,4 +28,6 @@ const About = () => {
     </>
   );
 };
+
 export default About;
+
