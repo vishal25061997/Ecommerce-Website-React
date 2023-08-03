@@ -1,0 +1,51 @@
+.home-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.tour{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+.tour-style{
+    text-align: center;
+}
+.button{
+
+    border-radius: 6px;
+    background-color:#56ccf2;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 1rem;
+    height: 20px;
+}
+.styling{
+    padding :1rem;
+    width : 70%; 
+    display: flex;
+    justify-content: space-between;
+
+}
+.generics{
+    font-size: 60px;
+}
+.album{
+    font-size: 20px;
+    border: 1px solid #56ccf2;
+    width:25%;
+    margin: auto;
+    margin-bottom: 8px;
+    
+}
+.play{
+    border-radius: 50%;
+border: 1px solid #56ccf2;
+ font-size: 30px;
+ width: 5%;
+ margin: auto;
+}
