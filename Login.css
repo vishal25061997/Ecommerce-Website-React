@@ -1,0 +1,38 @@
+
+.form{
+    background-color: rgb(188, 190, 190);
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 550px;
+    margin: 20px auto;
+    padding: 20px;
+    /* height: 600px; */
+}
+
+.login-form{
+    text-align: left;
+    padding: 20px 10px;
+}
+
+.login-form > *{
+    padding: 5px;
+}
+
+.form__label{
+    width: 40%;
+}
+
+.form_input{
+    width: 60%;
+}
+
+.footer{
+    text-align: center;
+}
+button{
+    background-color: rgb(145, 145, 38);
+    color: black;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+}
