@@ -1,0 +1,33 @@
+.contact-form{
+    background-color: rgb(184, 189, 188);
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 550px;
+    margin: 20px auto;
+    padding: 20px;
+    /* height: 600px; */
+}
+
+.contactus-form{
+    text-align: left;
+    padding: 20px 10px;
+}
+
+.contactus-form > *{
+    padding: 5px;
+}
+
+.form__label{
+    width: 40%;
+}
+
+.form_input{
+    width: 60%;
+}
+
+.contact-btn{
+    background-color: green;
+    color: black;
+    border-radius: 6px;
+    width: 50px;
+}
